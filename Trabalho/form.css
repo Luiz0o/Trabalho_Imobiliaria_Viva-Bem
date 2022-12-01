@@ -1,0 +1,51 @@
+body{
+    background-image: url("https://habitability.com.br/wp-content/uploads/2022/04/Cidadade-compacta-570x380.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } 
+
+
+element.style {
+    background-color: #e1e1e1;
+}
+#sub_content {
+    margin: auto;
+    width: 540px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 15px;
+    color: #fff;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto {
+    border-width: medium;
+    border-style: solid;
+}
+
+.inputSubmit{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+.inputSubmit:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}

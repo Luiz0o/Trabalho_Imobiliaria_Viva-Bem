@@ -1,0 +1,44 @@
+
+
+.box {
+    margin: auto;
+    width: 270px;
+	  background-color: rgba(0, 0, 0, 0.6);
+	  border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+  
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border: solid;
+}
+.inputSubmit{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+.inputSubmit:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+drop database `imobiliaria`;
+create schema `imobiliaria` charset utf8mb4;
+use `imobiliaria`;
+
+
+create table `usuario_nivel` (
+	`id` int not null auto_increment primary key,
+    `nivel` varchar(15) not null
+) engine=InnoDB;
+select*from `usuario_nivel`;
+
+create table `cadastro` (
+	`id` int not null primary key auto_increment,
+    `nome` varchar(50) not null,
+    `senha` varchar(50) not null,
+    `email` varchar(50) not null,
+    `telefone` varchar(20) not null,
+    `fk_id_nivel` int not null,
+    foreign key (`fk_id_nivel`) references `usuario_nivel`(`id`)
+) engine=InnoDB;
+
+create table `saq` (
+	`id` int not null primary key auto_increment,
+    `nome` varchar(50) not null,
+    `email` varchar(50) not null,
+    `telefone` varchar(20) not null,
+    `mensagem` varchar(100) not null
+) engine=InnoDB;
+
+create table `agendamentos` (
+	`id` int not null primary key auto_increment,
+    `nome` varchar(50) not null,
+    `email` varchar(50) not null,
+    `telefone` varchar(20) not null,
+    `empreendimento` int not null,
+    `periodo` datetime not null
+) engine=InnoDB;
+
+insert `usuario_nivel`values (default, 'Administrador'),
+							 (default, 'Usuario');
+                             
+insert `cadastro`(nome, senha, email, telefone, fk_id_nivel) values('Luiz Felipe Mathias Ferreira', 'lfmf2001', 'luizfelipemf2001@gmail.com', 992680982, 1);
